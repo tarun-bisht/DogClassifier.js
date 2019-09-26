@@ -1,0 +1,21 @@
+{% extends "/layout/layout.html" %}
+{% block content %}
+<!-- Loader -->
+<div class="loader-wrapper">
+  <div class="container">
+    <h6>Model is Loading.... It might take sometime</h6>
+    <p>That's where you need to be patient and persevere and see where things lead.</p>
+  </div><div class="lds-css ng-scope" style="width: 200px; height: 200px;"><div style="width:100%;height:100%" class="lds-facebook"><div></div><div></div><div></div></div>
+  </div>
+</div>
+<!-- Loader Ends -->
+<input type="file" id="inputFile" accept="image/*">
+<div class="container">
+  <div class="card mt-3 draggable-move">
+    <div class="card-body">
+      <h2 id="output-prediction"></h2>
+    </div>
+    <img class="card-img-top" src="" alt="Dog Input Image" id="input-image">
+  </div>
+</div>
+{% endblock content %}
